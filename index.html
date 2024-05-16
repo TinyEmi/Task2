@@ -74,10 +74,15 @@
         </div>
     </div>
 <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+    <h2 style="color: white; margin-top: 20px;">Sales by Product Line</h2>
     <div id="salesByProductLine" class="chart"></div>
+    <h2 style="color: white; margin-top: 20px;">Customer Segmentation</h2>
     <div id="customerSegmentationChart" class="chart"></div>
+    <h2 style="color: white; margin-top: 20px;">Average Transaction Amount Over Time</h2>
     <div id="averageTransactionChart" class="chart"></div>
+    <h2 style="color: white; margin-top: 20px;">Sales Trends Over Time</h2>
     <div id="salesOverTime" class="chart"></div>
+    <h2 style="color: white; margin-top: 20px;">Branch Performance Analysis</h2>
     <div id="branchPerformanceChart" class="chart"></div>
     <div class="tooltip" id="tooltip"></div>
 </div>
@@ -100,7 +105,7 @@ d3.csv("SalesDataset.csv", function(d) {
     document.getElementById('totalSales').textContent = 'Error loading data';
     document.getElementById('totalMembers').textContent = 'Error loading data';
     document.getElementById('totalNormalCustomers').textContent = 'Error loading data';
-    alert('Failed to load data: ' + error.message); // Add this to get a popup with the error message
+    alert('Failed to load data: ' + error.message);
 });
 
 
